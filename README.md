@@ -22,6 +22,21 @@ Credentials are currently protected to prevent misuse. Check out the screenshots
   <a href="https://hostelallocation.herokuapp.com/">COEP's Hostel Portal</a>
 </p>
 
+
+## Hostel Portal Functioning
+1) Student logs in to the portal using MIS credentials.
+2) Student Uploads documents for verification.
+3) Student pays hostel fees.
+4) Warden verifies the uploaded documents and payment.
+5) After documents are verified student can select the room by giving 5 preferences.
+6) Number of students having higher cgpa who have given preference to a room can be seen making the process completely transparent and at the same time secured. 
+7) After certain time, rooms are allocated according to the preferences and cgpa criteria.
+8) Student can now raise room maintenance using the protal.
+9) Student can also apply for leave stating the reason.
+10) Leave can be approved or rejected by warden.
+11) Warden can add dues which the student needs to pay.
+
+
 ## Screenshots : 
 Student Profile
 ![Student Profile](https://github.com/OmKhare/HostelAllocationPortal/blob/main/Screenshots/Student_Profile.png)
