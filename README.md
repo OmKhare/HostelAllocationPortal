@@ -1,5 +1,6 @@
 # Hostel Allocation Portal
-A web portal built for hostel students of COEP, which helps them with document verification, room allocation and every hostel related activity.
+A web portal built for hostel students of COEP, which helps them with document verification, room allocation and every hostel related activity. </br>
+Credentials are currently protected to prevent misuse. Check out the screenshots from the portal 👇🏻👇🏻
 
 ## Built With
 <p float = "left">
@@ -11,6 +12,15 @@ A web portal built for hostel students of COEP, which helps them with document v
 </p>
 
 ## Hosted With
+<p float = "left">
+ <img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white"/>
+</p>
+<p>
+  COEP's Hostel portal is live on heroku.
+</p>
+<p>
+  <a href="https://hostelallocation.herokuapp.com/">COEP's Hostel Portal</a>
+</p>
 
 ## Screenshots : 
 Student Profile
