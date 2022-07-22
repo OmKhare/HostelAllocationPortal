@@ -1,6 +1,10 @@
 # Hostel Allocation Portal
-A web portal built for hostel students of COEP, which helps them with document verification, room allocation and every hostel related activity. </br>
-Credentials are currently protected to prevent misuse. Check out the screenshots from the portal 👇🏻👇🏻
+A web portal built for hostel students of COEP, which helps them with document verification, room allocation and every hostel related activity, thus improving the traditional offline method. </br>
+</br>
+Check out the screenshots from the portal 👇🏻👇🏻</br>
+</br>
+**_NOTE:_** Credentials are currently protected to prevent misuse. 
+
 
 ## Built With
 <p float = "left">
@@ -31,7 +35,7 @@ Credentials are currently protected to prevent misuse. Check out the screenshots
 5) After documents are verified student can select the room by giving 5 preferences.
 6) Number of students having higher cgpa who have given preference to a room can be seen making the process completely transparent and at the same time secured. 
 7) After certain time, rooms are allocated according to the preferences and cgpa criteria.
-8) Student can now raise room maintenance using the protal.
+8) Student can now raise room maintenance issue using the protal.
 9) Student can also apply for leave stating the reason.
 10) Leave can be approved or rejected by warden.
 11) Warden can add dues which the student needs to pay.
