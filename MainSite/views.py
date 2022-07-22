@@ -9,24 +9,6 @@ from django.core.exceptions import ObjectDoesNotExist
 from django.core.files.storage import FileSystemStorage
 from django.contrib import messages
 
-# MAJOR TODO's : 
-#
-# 1. Add the On Hover Drop Down for the Select Room thing {Will have to make some changes in the database of the room} .
-# 2. Correct all the routings in each and every if else for all the function in views.py
-# 3. Add Styling to all the pages wherever necessary.
-# 3. Add all the changes which you have made in the code and if possible add the code wherever TODO mentioned.
-# 4. Remove all the redundant {Code which we are currently not using for this project eg: Guest Login, Bookings, etc} and Dubugging code.
-# 5. Search for a proper alert message system. 
-# 6. Host this POS. {We'll do it together.}
-
-
-# MAJOR INFORMATION
-# ALL the passwords are set to '1234567890'
-# Students Usernames : 112003075, 112003076, 112003066
-# Wardens Usernames : warden1, warden2
-# Superuser : heyhm
-
-
 def home(request):
     return render(request, 'home.html')
 
@@ -78,16 +60,6 @@ def warden_login(request):
                 elif user.is_active:
                     login(request, user)
 
-                    #IMP : Currently the logic for Allocating the rooms 
-                    #      is written here. 
-                    #      It will be executed when all the students have their
-                    #      documents verified. 
-                    #      Logic almost same as you have written.
-                    #      See if you can find a better place to fit this.
-                    #      Also some good initalisation conditions for it.
-                    #      TODO : Add a boolean field in user to denote whether he has given preferences.
-                    #             Replace with "documnets_aproved"
-
                     students = Student.objects.all()
                     room_list = Room.objects.all()
                     hostel = Hostel.objects.get(name=user.warden.hostel)
@@ -130,10 +102,6 @@ def warden_login(request):
                                     break
                                 else:
                                     alloted[i[2]] = 'NA'  
-
-                        #TODO : Check if any student is yet to be alloacted the rooms.
-                        #       Allocate him rooms remainning to be allocated.
-                        #       Just write a piece of code for it.
 
                         print(alloted)
                         for key in alloted.keys():
@@ -274,22 +242,6 @@ def select(request):
             messages.error(request,'Documnets not verified yet!')
             return redirect('student_profile')
         form = SelectionFormFloor()
-        #TODO : This code portion will be used to get a list of students who have 
-        #       applied to that particular room. {Here the dropdown thing must go in.}
-        #Currently not working.
-        # student_gender = request.user.student.gender
-        # student_course = request.user.student.course
-        # if student_course is None:
-        #     return HttpResponse('No Course Selected <br> '
-        #                         '<h3><a href = \'..\edit\' style = "text-align: center; color: Red ;"> Update Profile </a> </h3> ')
-        # student_room_type = request.user.student.course
-        # hostel = Hostel.objects.filter(
-        #     name='I')
-        # # print(student_gender, student_course, student_room_type)
-        # print(hostel)
-        # # x = Room.objects.none()
-        # x = Room.objects.filter(hostel=hostel[0]).all()
-        # print(x)
         students = Student.objects.all()
         dict = {}
         rooms = Room.objects.all()
@@ -362,8 +314,6 @@ def document_verification(request):
             if not user.is_warden:
                 return HttpResponse('Invalid Login')
             else:
-                # form = VerificationForm(request.POST)
-                # TODO : For Validation Still remainning due to Creation of Dynamic Forms.
                 print(request.POST)
                 dictionary = request.POST.dict()
                 del dictionary['csrfmiddlewaretoken']
