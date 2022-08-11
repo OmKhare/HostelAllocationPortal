@@ -3,7 +3,7 @@ A web portal built for hostel students of COEP, which helps them with document v
 </br>
 Check out the screenshots from the portal 👇🏻👇🏻</br>
 </br>
-**_NOTE:_** Credentials are currently protected to prevent misuse. 
+**_NOTE:_** Login credentials: </br> Username: 112003076(For user)/ warden1(For warden) </br> Password: 1234567890 
 
 
 ## Built With
