@@ -3,7 +3,7 @@ A web portal built for hostel students of COEP, which helps them with document v
 </br>
 Check out the screenshots from the portal 👇🏻👇🏻</br>
 </br>
-**_NOTE:_** Login credentials: </br> Username: 112003076(For user)/ warden1(For warden) </br> Password: 1234567890 
+**_NOTE:_** Login credentials: </br> Username: Om(For user) </br> Password: 1234567890 
 
 
 ## Built With
@@ -20,7 +20,7 @@ Check out the screenshots from the portal 👇🏻👇🏻</br>
  <img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white"/>
 </p>
 <p>
-  COEP's Hostel portal is live on heroku.
+  COEP's Hostel portal is live on Vercel
 </p>
 <p>
   <a href="https://hostelallocation.herokuapp.com/">COEP's Hostel Portal</a>
